@@ -1,12 +1,15 @@
 # lyft-motion-prediction-for-autonomous-vehicle
 
 <p align="center">
+  <img src="./demo/prediction-1.jpg" alt="prediction" width="500"/>
+</p>
+<p align="center">
   <img src="./demo/pred.gif" alt="pred clip" width="300"/>
 </p>
+Build motion prediction models for self-driving vehicles to predict other car/cyclist/pedestrian (called "agent")'s motion.
 
-
-### Description
-Build motion prediction models for self-driving vehicles
+> The image from L5Kit official document: http://www.l5kit.org/README.html <br/>
+> Lyft official page: https://self-driving.lyft.com/level5/prediction/
 
 ### Environment Setup
 - Python 3.* is installed
