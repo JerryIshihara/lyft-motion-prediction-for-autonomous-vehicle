@@ -6,10 +6,19 @@
 <p align="center">
   <img src="./demo/pred.gif" alt="pred clip" width="300"/>
 </p>
+
+### Description
 Build motion prediction models for self-driving vehicles to predict other car/cyclist/pedestrian (called "agent")'s motion.
 
 > The image from L5Kit official document: http://www.l5kit.org/README.html <br/>
 > Lyft official page: https://self-driving.lyft.com/level5/prediction/
+
+### Table of Contents
+
+- [Environment Setup](#environment-setup)
+- [Model](./model)
+- [Training](#training)
+- [Prediction](#prediction)
 
 ### Environment Setup
 - Python 3.* is installed
