@@ -3,7 +3,7 @@
 ### Description
 Build motion prediction models for self-driving vehicles
 
-### Set-up Environment
+### Environment Setup
 - Python 3.* is installed
 - Set permission
 ```
