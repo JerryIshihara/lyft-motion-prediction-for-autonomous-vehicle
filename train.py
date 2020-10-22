@@ -370,14 +370,14 @@ if __name__ == "__main__":
     num_frames_to_chop = 100
     MIN_FUTURE_STEPS = 10
     valid_base_path = create_chopped_dataset(
-        dm.require(valid_cfg["key"]), 
+        dm.require(valid_path), 
         cfg["raster_params"]["filter_agents_threshold"],
         num_frames_to_chop, 
         cfg["model_params"]["future_num_frames"], 
         MIN_FUTURE_STEPS
         )
     valid_zarr_path = str(Path(valid_base_path) /
-                          Path(dm.require(valid_cfg["key"])).name)
+                          Path(dm.require(valid_path)).name)
     valid_mask_path = str(Path(valid_base_path) / "mask.npz")
     valid_gt_path = str(Path(valid_base_path) / "gt.csv")
     valid_zarr = ChunkedDataset(valid_zarr_path).open()
@@ -438,4 +438,5 @@ if __name__ == "__main__":
     manager.extend(E.observe_lr(optimizer=optimizer), trigger=log_trigger)
     
     # ============================= Start Training ============================= 
+    print('='*10 + ' Start Training ... ' + '='*10)
     trainer.run(train_loader, max_epochs=epoch)

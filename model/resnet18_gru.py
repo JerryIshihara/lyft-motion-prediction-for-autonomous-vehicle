@@ -2,6 +2,7 @@ import sys
 import time
 from typing import Dict
 import numpy as np
+import torch
 from torch import nn
 from torch import Tensor, nn, optim
 from torchvision.models import resnet18
@@ -76,6 +77,7 @@ class Resnet18GRU(nn.Module):
         backbone_out_features = 512
         # X, Y coords for the future positions (output shape: Bx50x2)
         self.future_len = cfg["model_params"]["future_num_frames"]
+        self.batch_size = cfg['train_data_loader']['batch_size']
         num_targets = 2 * self.future_len
         self.num_preds = num_targets * num_modes
         self.num_modes = num_modes

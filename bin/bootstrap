@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Exit if any subcommand fails
+set -e
+
+DIR=$PWD
+
+# Python and requirement install
+
+VAR=`python --version`
+if [[ $VAR == *"Python 3"* ]]
+then
+    echo "==========> Had the Correct Python version."
+    echo "==========> Installing Project Requirement ..."
+    pip install -r requirements.txt
+else
+    echo "==========> Incorrect Python version: ${VAR}. Please install the required version first."
+fi
+
+
+
+
+
