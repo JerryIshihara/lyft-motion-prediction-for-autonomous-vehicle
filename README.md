@@ -1,5 +1,10 @@
 # lyft-motion-prediction-for-autonomous-vehicle
 
+<p align="center">
+  <img src="./demo/pred.gif" alt="pred clip" width="300"/>
+</p>
+
+
 ### Description
 Build motion prediction models for self-driving vehicles
 
