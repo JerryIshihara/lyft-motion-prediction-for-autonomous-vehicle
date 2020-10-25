@@ -31,6 +31,18 @@ chmod 700 bin/bootstrap
 bin/bootstrap
 ```
 
+### Dataset
+Dataset is not present in this repo, please download the **Lyft Level 5 Prediction Dataset kit** from the [official website](https://self-driving.lyft.com/level5/data/), and cite the following in your work:
+```
+@misc{lyft2020,
+  title = {One Thousand and One Hours: Self-driving Motion Prediction Dataset},
+  author = {Houston, J. and Zuidhof, G. and Bergamini, L. and Ye, Y. and Jain, A. and Omari, S. and Iglovikov, V. and Ondruska, P.},
+  year = {2020},
+  howpublished = {\url{https://level5.lyft.com/dataset/}}
+}
+```
+Unzip the the dataset into the folder `dataset/`.
+
 ### Training
 - After installing all the requirements, run the following command for trainig
 ```
